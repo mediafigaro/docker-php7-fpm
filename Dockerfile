@@ -39,12 +39,12 @@ RUN { \
 
 RUN echo "realpath_cache_size = 4096k; realpath_cache_ttl = 7200;" > /usr/local/etc/php/conf.d/php.ini
 
-# Install Composer
+# composer
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer && \
     composer --version
 
-# Set timezone
+# timezone
 
 RUN rm /etc/localtime && \
     ln -s /usr/share/zoneinfo/Europe/Paris /etc/localtime && \
