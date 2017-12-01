@@ -1,4 +1,4 @@
-FROM php:7.0-fpm
+FROM php:7.1-fpm
 
 MAINTAINER KENDRICK/MEDIA.figaro <media.figaro@gmail.com>
 LABEL DESCRIPTION "PHP7-FPM Docker container optimized for Symfony with OPcache and graphic library"
